@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NeonKeep</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+  <h1>NeonKeep</h1>
+</header>
+
+<div class="note-input-container">
+  <input type="text" id="title" placeholder="Title">
+  <textarea id="content" placeholder="Take a note..."></textarea>
+  <div class="color-picker">
+    <span class="color-dot" style="background:#ff006e" data-color="#ff006e"></span>
+    <span class="color-dot" style="background:#8338ec" data-color="#8338ec"></span>
+    <span class="color-dot" style="background:#3a86ff" data-color="#3a86ff"></span>
+    <span class="color-dot" style="background:#06ffa5" data-color="#06ffa5"></span>
+    <span class="color-dot" style="background:#ffbe0b" data-color="#ffbe0b"></span>
+  </div>
+  <button id="addBtn">Add Note</button>
+</div>
+
+<div id="notesGrid" class="notes-grid"></div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
